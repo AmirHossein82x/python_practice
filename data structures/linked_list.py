@@ -56,7 +56,7 @@ class LinkedList:
             current = self.head
 
             while position > 1:
-                current = new.next_node    
+                current = current.next_node    
                 position -= 1
             prev_node = current
             next_node = current.next_node
@@ -86,6 +86,20 @@ class LinkedList:
 
         return current
 
+    def node_at_index(self, index):
+        if index == 0:
+            return self.head
+
+        else:
+            current = self.head
+            position = 0
+
+            while position < index:
+                current = current.next_node
+                position += 1
+
+            return current
+
     def __repr__(self):
 
         nodes = []
@@ -112,7 +126,8 @@ l.add(12)
 l.add(13)
 l.add(14)
 l.insert(20, 0)
-l.remove(13)
-print(l.search(12))
+#l.remove(13)
 print(l)
+print(l.node_at_index(2))
+print(l.search(12))
 print(l.size())
