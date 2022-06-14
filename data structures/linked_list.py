@@ -129,6 +129,19 @@ class LinkedList:
 
             return current
 
+    def reverse(self):
+
+        prev = None
+        current = self.head
+
+        while current:
+            next1 = current.next_node
+            current.next_node = prev
+            prev = current
+            current = next1
+
+        self.head = prev
+
 
     def __repr__(self):
 
@@ -157,6 +170,8 @@ l.add(13)
 l.add(14)
 l.insert(20, 0)
 #l.remove(13)
+print(l)
+l.reverse()
 print(l)
 print(l.node_at_index(2))
 print(l[2])
