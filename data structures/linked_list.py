@@ -100,6 +100,36 @@ class LinkedList:
 
             return current
 
+    def index(self, key):
+        index = 0
+        current = self.head
+
+        while current:
+
+            if current .data == key:
+                return index
+
+            else:
+                index += 1
+                current = current.next_node
+
+    def __getitem__(self, index):
+
+        if index == 0:
+            return self.head
+
+        else:
+            current = self.head
+            pos = 0
+
+            while pos < index:
+
+                current  = current.next_node
+                pos += 1
+
+            return current
+
+
     def __repr__(self):
 
         nodes = []
@@ -129,5 +159,7 @@ l.insert(20, 0)
 #l.remove(13)
 print(l)
 print(l.node_at_index(2))
+print(l[2])
+print(l.index(14))
 print(l.search(12))
 print(l.size())
