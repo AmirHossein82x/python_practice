@@ -6,19 +6,7 @@ with open("information.csv") as file:
         name, city, age = line.rstrip().split(",")
         print(f"My name is {name}, I live in {city} and I am {age} years old")
 
-
-
-
-
-
-
-
 """
-l =  ['Ali', 'Tehran'] ['Ahmad', 'Yazd'] ['Reza', 'Shiraz'] ['Mohammad', 'Mashhad'] ['Hossein', 'Isfahan'] 
+l =  ['Ali', 'Tehran', "20"] ['Ahmad', 'Yazd', "22"] ['Reza', 'Shiraz', "24"] ['Mohammad', 'Mashhad', "26"] ['Hossein', 'Isfahan', "28"] 
 
-"""
-    
-    
-        
-
-      
+""" 
