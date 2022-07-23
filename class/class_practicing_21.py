@@ -7,7 +7,6 @@ class Part:
     def add(cls):
         print(cls.new)
 
-
 a = Part()
 b = Part()
 a.add()
