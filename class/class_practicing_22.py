@@ -21,6 +21,7 @@ class Bird(Animal):
 #animal = Animal()
 """ 
 when we use ABC we can not create a instance of Animal in the program
+The move and eat function must be created in the child(Bird) class
 """
 bird = Bird()
 bird.eat()
